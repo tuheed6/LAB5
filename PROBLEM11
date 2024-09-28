@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() {
+    float a, b, c;
+
+    printf("Enter first number: ");
+    scanf("%f", &a);
+    printf("Enter second number: ");
+    scanf("%f", &b);
+    printf("Enter third number: ");
+    scanf("%f", &c);
+
+   float greatest;
+    if (a >= b) {
+        if (a >= c) {
+            greatest = a;
+        } else {
+            greatest = c;
+        }
+    } else {
+        if (b >= c) {
+            greatest = b;
+        } else {
+            greatest = c;
+        }
+    }
+
+    printf("The greatest number is: %.2f\n", greatest);
+    return 0;
+}
